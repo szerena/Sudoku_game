@@ -154,15 +154,15 @@ def main_game():
 
  
     #Position_change_number
-    for x in player_position:
-      if player_input_position == x:
-        player_input_number = input("what's Your Number?")
-        for y in player_numbers:
-          if player_input_number == y:
-            c = int(x[0])
-            b = int(x[1])
-            map_hard[c][b] = y       
-            p_map()
+      for x in player_position:
+        if player_input_position == x:
+          player_input_number = input("what's Your Number?")
+          for y in player_numbers:
+            if player_input_number == y:
+              c = int(x[0])
+              b = int(x[1])
+              map_hard[c][b] = y       
+              p_map()
 
 
 def main():
